@@ -498,10 +498,14 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: white;
   padding: 20px 0;
   overflow: clip;
 }
+.section{
+  background: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -624,7 +628,7 @@ section,
 ======================= */
 .about.section {
   padding: 30px 0;
-  background: #e8e8e8; /* light background */
+  background: #fefdfd; /* light background */
 }
 
 /* Main container card look */
@@ -632,20 +636,22 @@ section,
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #eae9e9;
 }
 
 /* Profile image */
 .profile-img img,
 .about img {
-  border-radius: 12px;
+  border-radius: 19px;
   border: 2px solid #e9ecef;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  height: 250px;
 }
 
 /* About info text */
 .about-info p {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: #0b0a0a;
 }
 
@@ -694,7 +700,6 @@ section,
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  
 }
 
 /* Hide progress bars (optional) */
@@ -788,7 +793,7 @@ section,
    ABOUT ME TEXT
 ======================= */
 .about-me {
-  background: #ffffff;
+  background: #fefefe;
   padding: 35px;
   border-radius: 16px;
   border: 1px solid #eaeaea;
@@ -804,7 +809,7 @@ section,
 .about-me p {
   font-size: 13px;
   line-height: 1.7;
-  color: #444;
+  color: #0f0f0f;
   margin-bottom: 16px;
 }
 
@@ -940,9 +945,16 @@ section,
   margin-bottom: 10px;
 }
 .rows {
-  margin: 0px 50px;
+  margin: 0px 95px;
+  background: #f2f0f0;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
-h8{font-size: 14px;}
+h8 {
+  font-size: 14px;
+}
 .resume .resume-item {
   padding: 0 0 10px 10px;
   margin-top: -2px;
@@ -1000,7 +1012,14 @@ h8{font-size: 14px;}
 
 /* Portfolio section */
 .portfolio {
-  padding: 10px 15px; /* added horizontal padding for small screens */
+  border-radius: 16px;
+  border: 1px solid #f9f8f8;
+  box-shadow: 0 10px 25px rgba(233, 233, 233, 0.06);
+  margin: 20px 95px;
+  
+}
+.portfolio .container {
+  background-color: #f2efef;
 }
 
 /* Portfolio item */
@@ -1038,7 +1057,7 @@ h8{font-size: 14px;}
 }
 
 .portfolio-info {
-  background: rgba(255, 255, 255, 0.6); /* white with 70% opacity */
+  background: rgba(130, 40, 40, 0.6); /* white with 70% opacity */
   color: #111; /* dark text */
   padding: 20px; /* increase padding for spacing */
   margin: 0 auto;
@@ -1157,6 +1176,18 @@ h8{font-size: 14px;}
 --------------------------------------------------------------*/
 .services .service-item {
   position: relative;
+  background: #f9f9f9;
+  margin: 20px 25px;
+  justify-content: center;
+}
+
+.services {
+  margin: 30px 95px;
+  padding: 35px;
+  border-radius: 19px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  background: #f2efef;
 }
 
 .services .service-item .icon {
@@ -1169,7 +1200,7 @@ h8{font-size: 14px;}
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid var(--accent-color);
-  margin-right: 20px;
+  margin: 10px 5px;
 }
 
 .services .service-item .icon i {
@@ -1190,6 +1221,7 @@ h8{font-size: 14px;}
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  margin: 20px 5px;
 }
 
 .services .service-item .title a {
@@ -1376,7 +1408,10 @@ h8{font-size: 14px;}
 --------------------------------------------------------------*/
 .contact-container {
   max-width: 900px;
-  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid #f03030;
+  box-shadow: 0 10px 25px rgba(233, 233, 233, 0.06);
+  margin: 20px 205px;
 }
 
 /* Section Title */
@@ -1397,7 +1432,7 @@ h8{font-size: 14px;}
 .contact-info-cards {
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: #edebeb;
   padding: 20px 30px;
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -1450,6 +1485,7 @@ h8{font-size: 14px;}
   font-size: 14px;
   resize: none;
 }
+.main{background: #fbfcfd;}
 .contact-form button {
   background: #0d6efd;
   color: #fff;
